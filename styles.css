@@ -1,0 +1,439 @@
+/* Estilos básicos para o corpo do documento */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1E3163;
+    color: #e8ab34;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #e8ab34;
+}
+ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    margin: 0;  /* Remove a margem padrão */
+    padding: 0;  /* Remove o preenchimento padrão */
+    overflow: hidden;  /* Limpa os floats dentro do <ul> */
+
+}
+
+
+li {
+    float: left; 
+    margin-right: 20px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center; 
+    padding: 14px 16px; 
+    text-decoration: none;
+}
+
+
+
+/* Estilos para a navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #5874D9;
+}
+
+nav a {
+    color: white;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+nav a:hover {
+    color: #e8ab34;
+}
+
+/* Configurações para a seção de serviços */
+#servicos {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.servico {
+    background-color: #ffffff;
+    border: 2px solid #5874D9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.servico img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.servico h3 {
+    color: #1E3163;
+    padding: 10px;
+}
+
+.servico p {
+    padding: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Estilos para a seção de clientes, se necessário */
+.clientes {
+    background-color: #e8f0fe;
+    padding: 20px;
+    text-align: center;
+}
+
+.cliente {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para a seção de contato */
+#contato {
+    background-color: #e8ab34;
+    padding: 20px;
+    color: #1E3163;
+    text-align: center;
+}
+
+#contato a {
+    color: #1E3163;
+    text-decoration: none;
+}
+
+#contato a:hover {
+    color: #5874D9;
+}
+
+/* Rodapé, se aplicável */
+footer {
+    background-color: #1E3163;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Resposta para telas menores */
+@media (max-width: 600px) {
+    .container-servicos {
+        grid-template-columns: 1fr;
+    }
+}
+/* Estilos para a seção de clientes */
+.clientes {
+    background-color: #f4f4f4;  /* Sutil contraste com o fundo geral */
+    padding: 20px;
+    text-align: center;
+}
+
+.container-clientes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Definindo uma largura mínima mais adequada */
+    gap: 10px;
+    justify-content: center;  /* Centraliza os quadros como um todo */
+}
+
+.cliente {
+    background-color: #ffffff;
+    border: 2px solid #5874D9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #1E3163 ;
+    height: 100px;  /* Altura fixa para todos os quadradinhos */
+    display: flex;
+    align-items: center;  /* Centraliza o texto verticalmente */
+    justify-content: center;  /* Centraliza o texto horizontalmente */
+}
+
+.cliente a {
+    color: #1E3163;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cliente a:hover {
+    color: #e8ab34;
+}
+
+/* Configurações para a seção de vídeos */
+#videos {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+.container-videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* se adapta ao tamanho da tela */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Configurações para a seção de vídeos */
+#videos {
+    background-color: #ffffff; /* Altere conforme necessário */
+    padding: 20px;
+    text-align: center;
+    overflow: hidden; /* Impede que o conteúdo ultrapasse o contêiner */
+}
+
+.container-videos {
+    display: flex; /* Usa flexbox para controle de layout linear */
+    justify-content: space-between; /* Espaçamento uniforme entre vídeos */
+    align-items: center; /* Alinha verticalmente */
+    gap: 20px; /* Espaçamento entre os vídeos */
+    padding: 20px;
+    max-width: 1200px; /* Ajuste a largura máxima conforme necessário */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+.video {
+    flex: 1 1 auto; /* Flexibilidade para crescer e encolher */
+    background-color: #ffffff;
+    border: 2px solid #5874D9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: calc(33.333% - 14px); /* Cálculo para respeitar o espaço entre vídeos */
+}
+
+.video img {
+    width: 100%;
+    height: auto; /* Ajuste conforme necessário */
+}
+
+.video-desc {
+    color: #1E3163;
+    padding: 10px;
+}
+
+.video-desc h3 {
+    margin-top: 0;
+}
+
+
+
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Centraliza e dá espaço igual entre as imagens */
+    align-items: center; /* Alinha verticalmente */
+    margin-top: 20px; /* Espaço acima da galeria */
+}
+
+.galeria img {
+    width: 350px; /* Largura da imagem */
+    height: auto; /* Altura automática para manter a proporção */
+    margin: 15px; /* Espaço entre as imagens */
+    border: 3px solid #5874D9; /* Borda cinza claro */
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    header, nav, .container-servicos, #contato, footer {
+        text-align: center;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        float: none; /* Cancela o float para exibição em bloco */
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container-servicos, .container-videos {
+        grid-template-columns: 1fr; /* Uma coluna por linha */
+    }
+
+    .servico, .video {
+        margin-bottom: 20px;
+    }
+
+    .container-videos {
+        flex-direction: column; /* Empilha os vídeos verticalmente */
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    .container-videos {
+        padding: 10px; /* Reduz o padding para economizar espaço */
+    }
+
+    .video-desc h3 {
+        font-size: 12px; /* Diminui o tamanho da fonte para caber em telas menores */
+    }
+    .texto-descricao {
+        margin-left: 10px; /* Adiciona uma margem à esquerda */
+        margin-right: 10px; /* Adiciona uma margem à direita */
+    }
+}
+
+/* Resposta para telas menores */
+@media (max-width: 425px) {
+    header, nav, .container-servicos, #contato, footer, .container-videos {
+        text-align: center;
+    }
+
+    nav a, .servico, .video {
+        padding: 10px 0;
+    }
+
+    .container-servicos, .container-videos {
+        grid-template-columns: 1fr;
+    }
+
+    .video {
+        margin-bottom: 20px;
+    }
+
+    .video-desc h3 {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+
+}
+
+/* Resposta para telas menores até 375px */
+@media (max-width: 375px) {
+    body {
+        font-size: 14px; /* Tamanho de fonte menor para melhor ajuste */
+    }
+
+    nav, .container-servicos, .container-videos {
+        padding: 5px; /* Menos padding para mais espaço */
+    }
+
+    nav a, .servico, .video {
+        padding: 8px 5px;
+    }
+
+    .servico, .video {
+        margin-bottom: 15px;
+    }
+
+    .container-servicos, .container-videos {
+        flex-direction: column;
+        grid-template-columns: 1fr; /* Todos os itens em uma única coluna */
+    }
+
+    header h1, nav a {
+        font-size: 16px; /* Redução do tamanho da fonte */
+    }
+
+    .servico h3, .servico p, .video-desc h3 {
+        padding: 8px 10px; /* Ajuste no padding */
+        font-size: 13px; /* Redução da fonte para economia de espaço */
+    }
+
+    .texto-descricao {
+        margin-left: 5px; /* Adiciona uma margem à esquerda */
+        margin-right: 5px; /* Adiciona uma margem à direita */
+    }
+}
+
+
+/* Resposta para telas muito pequenas até 320px */
+@media (max-width: 320px) {
+    body {
+        font-size: 12px; /* Ajusta o tamanho da fonte para melhor legibilidade */
+    }
+
+    header {
+        padding: 10px 0; /* Reduz o padding no cabeçalho para economizar espaço */
+    }
+
+    header h1 {
+        font-size: 16px; /* Reduz o tamanho da fonte no cabeçalho para melhor ajuste */
+        margin: 0; /* Remove a margem para evitar espaços extras */
+        padding: 0 10px; /* Adiciona padding para evitar que o texto toque as bordas */
+    }
+
+    nav {
+        padding: 5px 0; /* Reduz o padding na navegação */
+    }
+
+    nav a {
+        font-size: 12px; /* Reduz o tamanho da fonte nos links */
+        padding: 5px; /* Reduz o padding para os links */
+    }
+
+    .container-servicos {
+        grid-template-columns: 1fr; /* Mantém uma única coluna para os serviços */
+        padding: 5px; /* Reduz o padding no contêiner */
+    }
+
+    .servico {
+        padding: 8px; /* Reduz o padding dentro dos blocos de serviço */
+        margin-bottom: 10px; /* Ajusta a margem inferior */
+    }
+
+    .servico h3, .servico p {
+        font-size: 12px; /* Reduz o tamanho da fonte nos títulos e parágrafos */
+        padding: 4px 6px; /* Reduz o padding para textos */
+    }
+
+    .container-videos {
+        grid-template-columns: 1fr; /* Altera para uma coluna na parte de vídeos */
+        padding: 5px; /* Reduz o padding no contêiner */
+    }
+
+    .video {
+        margin-bottom: 10px; /* Ajusta a margem inferior */
+    }
+    .texto-descricao {
+        margin-left: 5px; /* Adiciona uma margem à esquerda */
+        margin-right: 5px; /* Adiciona uma margem à direita */
+    }
+}
+
